@@ -1,15 +1,23 @@
- body {
-  color: black;
+/*Set to light mode atomatically*/
+
+--font-color: black;
+--background-color: white;
+--nav-color: #999999;
+/*dark mode: #3b3b3b light: #999999*/
+
+body {
+  color: var(--font-color);
+  background-color: var(--background-color, #999999);
  }
 
 #navbar {
   overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 90px 10px; /* Large padding which will shrink on scroll (using JS) */
-  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
-  position: fixed; /* Sticky/fixed navbar */
+  background-color: var(--nav-color, grey);
+  padding: 90px 10px;
+  transition: 0.4s;
+  position: fixed;
   width: 100%;
-  top: 0; /* At the top */
+  top: 0;
   z-index: 99;
 }
 
