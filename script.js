@@ -1,4 +1,5 @@
-font size
+// Navbar
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -11,6 +12,8 @@ function scrollFunction() {
   }
 }
 
+//Theme switcher
+
 const root = document.documentElement 
 const themeBtns = document.querySelectorAll('.theme > button')
 
@@ -21,13 +24,13 @@ themeBtns.forEach((btn) => {
 function handleThemeUpdate(e) {
   switch(e.target.value) {
     case 'Dark': 
-      root.style.setProperty('--bg', 'black')
-      root.style.setProperty('--bg-text', 'white')
+      root.style.setProperty('--background-color', 'black')
+      root.style.setProperty('--font-color', 'white')
       break
       
     case 'Light':
-      root.style.setProperty('--bg', 'white')
-      root.style.setProperty('--bg-text', 'black')
+      root.style.setProperty('--background-color', 'white')
+      root.style.setProperty('--font-color', 'black')
       break
   }
 }
