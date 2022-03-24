@@ -3,7 +3,7 @@ body {
   background-color: #3b3b3b;
  }
 
-ul.nav {
+ul.navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@ ul.nav {
   float: left;
 }
 
-li.nav {
+button.nav {
   display: block;
   color: white;
   text-align: center;
