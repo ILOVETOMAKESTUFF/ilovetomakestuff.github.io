@@ -27,7 +27,7 @@ button.nav {
   font-size: 25px;
 }
 
-.active {
+button.nav:hover {
   background-color: 504806;
   transition-duration: 0.5s;
 }
