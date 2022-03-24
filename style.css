@@ -23,6 +23,8 @@ button.nav {
   padding: 14px 16px;
   text-decoration: none;
   radius: 5px;
+  background-color: #796E09;
+  font-size: 25px;
 }
 
 .active {
