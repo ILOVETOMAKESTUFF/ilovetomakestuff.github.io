@@ -2,3 +2,25 @@ body {
   color: white;
   background-color: #3b3b3b;
  }
+
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  radius: 5px;
+}
+
+.nav {
+  float: left;
+}
+
+li.nav {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  radius: 5px;
+}
