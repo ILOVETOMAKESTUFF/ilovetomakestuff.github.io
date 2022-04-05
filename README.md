@@ -1,2 +1,2 @@
 # ilovetomakestuff.github.io
-My website
+My website. In pause, so please don't make PRs right now.
