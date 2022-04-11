@@ -1,33 +1,4 @@
 body {
   color: white;
-  background-color: #3b3b3b;
+  background-color: #d3d3d3;
  }
-
-ul.navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #796E09;
-  radius: 5px;
-}
-
-.nav {
-  float: left;
-}
-
-button.nav {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  radius: 5px;
-  background-color: #796E09;
-  font-size: 25px;
-}
-
-button.nav:hover {
-  background-color: 504806;
-  transition-duration: 0.5s;
-}
