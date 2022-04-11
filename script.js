@@ -6,3 +6,5 @@ setInterval(async() => {
   const followerCount = followersPage.querySelector(".box-head h2").innerText.match(/\((.*)\)/)[1];
   document.getElementById("counter").innerText = followerCount;
 }, 5000)
+
+document.getElementById("date").innerHTML("The date is " + Date());
