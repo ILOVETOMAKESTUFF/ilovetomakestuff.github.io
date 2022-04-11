@@ -9,3 +9,7 @@ setInterval(async() => {
 
 //Just experimenting!
 document.getElementById("date").innerHTML("The date is " + Date());
+
+function alertSaying(e) {
+  window.alert("bruh, " + e);
+} 
