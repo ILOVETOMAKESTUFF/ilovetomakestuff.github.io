@@ -7,4 +7,5 @@ setInterval(async() => {
   document.getElementById("counter").innerText = followerCount;
 }, 5000)
 
+//Just experimenting!
 document.getElementById("date").innerHTML("The date is " + Date());
