@@ -34,3 +34,13 @@ body.light {
   background-color: #b88f08;
   color: white;
 }
+
+#themebutton {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition-duration: 0.3s;
+}
