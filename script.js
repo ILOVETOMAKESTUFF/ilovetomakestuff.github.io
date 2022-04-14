@@ -19,12 +19,10 @@ function getFollowers() {
 function switchThemes() {
   theme = get("body").className;
   if (theme == "light") {
-    theme = "dark";
-    get("body").className = theme;
+    get("body").className = dark;
     get("themebutton").innerText = "Light";
   } else if (theme == "dark") {
-    theme = "light";
-    get("body").className = theme;
+    get("body").className = "light";
     get("themebutton").innerText = "Dark";
   }
 }
