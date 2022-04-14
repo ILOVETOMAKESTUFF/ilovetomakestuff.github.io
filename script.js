@@ -1,7 +1,7 @@
 //Startup
 let theme = "light";
 function get(query) {return document.querySelector(query)}; // Taken from lopste/drawing-station, check it out!
-
+// These two functions were from ATs
 function getFollowers() {
   var user = "ISTILLMAKESTUFF";
   const parser = new window.DOMParser();
@@ -13,8 +13,16 @@ function getFollowers() {
   }, 5000)
 }
 
-//Just experimenting!
-//document.getElementById("date").innerHTML("The date is " + Date());
+function getMessages() {
+  fetch("https://api.scratch.mit.edu/users/ISTILLMAKESTUFF/messages/count")
+  .then(res => res.json())
+  .then(res => {
+   get("countermessage").innerText = "Message count: " + res.count;
+})
+}
+
+/* Just experimenting!
+document.getElementById("date").innerHTML("The date is " + Date()); */
 
 function switchThemes() {
   theme = get("body").className;
