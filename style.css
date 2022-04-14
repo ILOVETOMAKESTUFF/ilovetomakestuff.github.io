@@ -1,7 +1,3 @@
-body {
-  margin: 25px 50px 75px 100px;
-}
-
 body.dark {
   background-color: #171717;
   color: white;
