@@ -30,7 +30,7 @@ body.light {
   transition-duration: 0.3s;
 }
 
-.topnav a.active {
+.topnav a:active {
   background-color: #b88f08;
   color: white;
 }
