@@ -11,7 +11,7 @@ body.light {
 .topnav {
   overflow: hidden;
   background-color: #333;
-  margin: 0; !important
+  margin: 0;
 }
 
 .topnav a {
@@ -49,4 +49,30 @@ body.light {
   background-color: #ddd;
   color: black;
   transition-duration: 0.3s;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img {
+  width: 80%;
+  height: 80%;
+  filter: blur(4px);
+  transition-duration: 1.2s;
+}
+
+img:hover {
+  width: 100%;
+  height: 100%;
+  filter: blur(0px);
+  transition-duration: 1.2s;
 }
