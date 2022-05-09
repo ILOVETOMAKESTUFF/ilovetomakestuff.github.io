@@ -1,34 +1,130 @@
 <!DOCTYPE html>
-<html lang=eng>
-  <head>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="script.js"></script>
-    <title>
-      I_LOVE_TO_MAKE_STUFF's Website! 😀
-    </title>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Glassmorphism" />
+    <meta
+      name="keywords"
+      content="glassmorphism,UIUX"
+    />
+    <meta name="author" content="emmaccen" />
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #333;
+  overflow-x: hidden;
+  padding: 10px 0;
+  transition-duration: 0.7s;
+  border-radius: 10px;
+}
+
+.sidenav a {
+  padding: 10px 8px 10px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition-duration: 0.7s;
+}
+
+.sidenav a:hover {
+  color: black;
+  background-color: #0A34C3;
+  transition-duration: 0.7s;
+  
+}
+
+.main {
+  margin-left: 140px;
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.landingContainer {
+  height: 100vh;
+  font-family: helvetica;
+  /* set a gradient background with 3 colours https://coolors.co/ */
+  background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiZbjVIOzyTf3fvhsQKmUxdox-JScl7sZJvg:https://4kwallpapers.com/images/wallpapers/soap-bubble-black-background-vibrant-painting-panoramic-3440x1440-7113.jpg&usqp=CAU);
+  background-size: cover;
+/*linear-gradient(
+    to right,
+    rgba(32, 191, 85),
+    rgba(32, 164, 243),
+    rgba(11, 79, 108)
+  );*/
+}
+
+.glassContainer {
+  position: absolute;
+  /* center content */
+  justify-content: right;
+  display: flex;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+.cover {
+  transition: 0.5s all ease;
+  height: 70%;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.25);
+  /* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .cover {
+    height: 30%;
+  }
+}
+</style>
   </head>
-  <body class=light>
-    <div id="top">
-      <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <button id="themebutton" onclick="switchThemes()">Light</a>
-      </div>
-    </div>>
-    <div id="content">
-      <h1>I_LOVE_TO_MAKE_STUFF's Website!</h1>
-      <h3><a href="https://scratch.mit.edu/users/ISTILLMAKESTUFF"></h3>
-      <h4 id="counterfollow"></h4>
-      <h4 id="countermessage"></h4>
-      <br>
-      <p>Hello! I'm I_LOVE_TO_MAKE_STUFF. I love to code websites, <a href="https://scratch.mit.edu">Scratch</a> projects, and more. I am 13 and a Ukrainian. I am currently learning JavaScipt and improving my CSS.</p>
-      <p>Here are some of my projects:</p>
-      <div id="gallery">
-        <img src="images/periscope-preview.png" alt="periscope-search">
-        <img src="images/coming-soon.png" alt="nothing here yet">
+  <body>
+    <div class="sidenav">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div id="about" class="landingContainer">
+      <div class="glassContainer">
+        <div class="cover">
+          <h2>Hi!</h2>
+          <b><p>I'm ILOVETOMAKESTUFF!</p></b>
+        </div>
       </div>
     </div>
   </body>
-</html>
+</html> 

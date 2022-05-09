@@ -1,78 +1,88 @@
-body.dark {
-  background-color: #171717;
+body {
+  font-family: "Lato", sans-serif;
   color: white;
 }
 
-body.light {
-  background-color: #e8e8e8;
-  color: black;
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #333;
+  overflow-x: hidden;
+  padding: 10px 0;
+  transition-duration: 0.7s;
+  border-radius: 10px;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
+.sidenav a {
+  padding: 10px 8px 10px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition-duration: 0.7s;
+}
+
+.sidenav a:hover {
+  color: black;
+  background-color: #0A34C3;
+  transition-duration: 0.7s;
+  
+}
+
+.main {
+  margin-left: 140px;
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+body {
   margin: 0;
+  padding: 0;
 }
 
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  transition-duration: 0.3s;
+* {
+  box-sizing: border-box;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-  transition-duration: 0.3s;
+.landingContainer {
+  height: 100vh;
+  font-family: helvetica;
+  background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiZbjVIOzyTf3fvhsQKmUxdox-JScl7sZJvg:https://4kwallpapers.com/images/wallpapers/soap-bubble-black-background-vibrant-painting-panoramic-3440x1440-7113.jpg&usqp=CAU);
+  background-size: cover;
 }
 
-.topnav a:active {
-  background-color: #b88f08;
-  color: white;
-}
-
-#themebutton {
-  float: right;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  transition-duration: 0.3s;
-}
-
-#themebutton:hover {
-  background-color: #ddd;
-  color: black;
-  transition-duration: 0.3s;
-}
-
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-img {
-  width: 80%;
-  height: 80%;
-  filter: blur(4px);
-  transition-duration: 1.2s;
-}
-
-img:hover {
+.glassContainer {
+  position: absolute;
+  justify-content: right;
+  display: flex;
+  top: 0;
   width: 100%;
   height: 100%;
-  filter: blur(0px);
-  transition-duration: 1.2s;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+.cover {
+  transition: 0.5s all ease;
+  height: 70%;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .cover {
+    height: 30%;
+  }
 }
