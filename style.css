@@ -74,9 +74,6 @@ body {
   background-color: white;
   width: 100vm;
   border-radius: 10px;
-}
-
-#container {
   text-align: center;
   height: 500px;
   width: 100vm;
@@ -138,4 +135,12 @@ img:hover {
   background-color: rgb(106, 86, 0);
   width: 100vm;
   border-radius: 10px;
+  text-align: center;
+  height: 500px;
+  width: 100vm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
 }
