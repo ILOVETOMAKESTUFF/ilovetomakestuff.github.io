@@ -1,88 +1,107 @@
-body {
-  font-family: "Lato", sans-serif;
-  color: white;
-}
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
 
-.sidenav {
-  width: 130px;
-  position: fixed;
-  z-index: 1;
-  top: 20px;
-  left: 10px;
-  background: #333;
-  overflow-x: hidden;
-  padding: 10px 0;
-  transition-duration: 0.7s;
-  border-radius: 10px;
-}
+@keyframes bounce-7 {
+        0%   { transform: scale(1,1)      translateY(0); }
+        10%  { transform: scale(1.1,.9)   translateY(0); }
+        30%  { transform: scale(.9,1.1)   translateY(-100px); }
+        50%  { transform: scale(1.05,.95) translateY(0); }
+        57%  { transform: scale(1,1)      translateY(-7px); }
+        64%  { transform: scale(1,1)      translateY(0); }
+        100% { transform: scale(1,1)      translateY(0); }
+    }
 
-.sidenav a {
-  padding: 10px 8px 10px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-  transition-duration: 0.7s;
-}
 
-.sidenav a:hover {
-  color: black;
-  background-color: #0A34C3;
-  transition-duration: 0.7s;
-  
-}
-
-.main {
-  margin-left: 140px;
-  padding: 0px 10px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-body {
+*{
   margin: 0;
   padding: 0;
-}
-
-* {
   box-sizing: border-box;
+  font-family: "Asap", sans-serif;
 }
 
-.landingContainer {
-  height: 100vh;
-  font-family: helvetica;
-  background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiZbjVIOzyTf3fvhsQKmUxdox-JScl7sZJvg:https://4kwallpapers.com/images/wallpapers/soap-bubble-black-background-vibrant-painting-panoramic-3440x1440-7113.jpg&usqp=CAU);
-  background-size: cover;
+body {
+  background: #000;
+  font-family: "Asap", sans-serif;
+  margin: auto;
 }
 
-.glassContainer {
-  position: absolute;
-  justify-content: right;
-  display: flex;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  padding-top: 20px;
-  padding-right: 20px;
-}
-.cover {
-  transition: 0.5s all ease;
-  height: 70%;
-  width: 70%;
-  background-color: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
-  padding-top: 10px;
+#top {
+  background-color: #111;
+
   text-align: center;
+  height: 500px;
+  width: 100vm;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  flex-direction:column;
+  margin: auto;
+  font-size: 40px;
+  color: white;
+  border-radius: 10px;  
 }
 
-@media (max-width: 700px) {
-  .cover {
-    height: 30%;
-  }
+#bounce {
+  animation-name: bounce-7;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#norm {
+  background-color: #222;
+  width: 100vm;
+  border-radius: 10px;
+}
+
+div {
+  text-align: center;
+  height: 500px;
+  width: 100vm;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  flex-direction:column;
+  margin: auto;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+	width: 100vm;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+	width: 100vm;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: #111;
+}
+
+a:visited {
+  color:#222;
+}
+
+img {
+  filter: blur(4px);
+  transition-duration: 0.3s;
+}
+
+img:hover {
+  filter: blur(0px);
+  transition-duration: 0.3s;
 }
