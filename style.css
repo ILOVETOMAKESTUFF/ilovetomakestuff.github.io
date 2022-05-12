@@ -1,13 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
 
 @keyframes bounce-7 {
-        0%   { transform: scale(1,1)      translateY(0); }
-        10%  { transform: scale(1.1,.9)   translateY(0); }
-        30%  { transform: scale(.9,1.1)   translateY(-100px); }
-        50%  { transform: scale(1.05,.95) translateY(0); }
-        57%  { transform: scale(1,1)      translateY(-7px); }
-        64%  { transform: scale(1,1)      translateY(0); }
-        100% { transform: scale(1,1)      translateY(0); }
+        0%   { 
+          transform: scale(1,1)      translateY(0); }
+        10%  { 
+          transform: scale(1.1,.9)   translateY(0); 
+        }
+        30%  { 
+          transform: scale(.9,1.1)   translateY(-100px); 
+        }
+        50%  { 
+          transform: scale(1.05,.95) translateY(0); 
+        }
+        57%  { 
+          transform: scale(1,1)      translateY(-7px); 
+        }
+        64%  { 
+          transform: scale(1,1)      translateY(0); 
+        }
+        100% { 
+          transform: scale(1,1)      translateY(0); 
+        }
+    }
+
+    @keyframes fade-left {
+      0% {
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
     }
 
 
@@ -84,6 +108,10 @@ div {
   opacity: 1;
 }
 
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+
 a {
   color: black;
 }
@@ -104,4 +132,10 @@ img {
 img:hover {
   filter: blur(0px);
   transition-duration: 0.3s;
+}
+
+#projects {
+  background-color: rgb(106, 86, 0);
+  width: 100vm;
+  border-radius: 10px;
 }
